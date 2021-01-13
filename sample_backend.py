@@ -72,4 +72,6 @@ def get_user(id):
             if user['id'] == id:
                users['users_list'].remove(user)
                resp = jsonify(success=True)
+               return resp
+         resp = jsonify(success=False)
          return resp
